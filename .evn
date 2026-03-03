@@ -1,4 +1,4 @@
-PRIVATE_KEY=H18WR6moC8MS3V1nVABTL3N1GmoBGmXEAxdTdzrvXvCv
+PRIVATE_KEY=3c3rEVUJxdLRu7iSq4RoeZzJyu2bVpKBkystXx6awYQHJqxLVA8cahUsLnjJLythVjrt5oh51oQpiP1wfP6U1p4L
 RPC_ENDPOINT=https://mainnet.helius-rpc.com/?api-key=fe95fd39-8bae-4c99-90b9-20f9937a66f1
 RPC_WEBSOCKET_ENDPOINT=wss://mainnet.helius-rpc.com/?api-key=fe95fd39-8bae-4c99-90b9-20f9937a66f1
 QUOTE_MINT=WSOL
