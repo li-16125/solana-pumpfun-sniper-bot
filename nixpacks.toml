@@ -1,8 +1,10 @@
 [phases.setup]
-nixPkgs = ["cargo", "rustc", "gcc", "openssl", "pkg-config", "make", "cmake"]
+nixPkgs = ["cargo", "rustc", "gcc", "openssl.dev", "pkg-config", "make"]
 
 [phases.build]
-cmds = ["cargo build --release"]
+cmds = [
+  "cargo build --release"
+]
 
 [start]
 cmd = "./target/release/solana-pumpfun-sniper-bot"
