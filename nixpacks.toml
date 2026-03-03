@@ -2,12 +2,7 @@
 nixPkgs = ["cargo", "rustc", "gcc", "openssl", "pkg-config", "make", "cmake"]
 
 [phases.build]
-cmds = ["cargo build --release --verbose"]
+cmds = ["cargo build --release"]
 
 [start]
 cmd = "./target/release/solana-pumpfun-sniper-bot"
-
-# 修正这里：把原来的对象格式改成数组格式
-[phases.setup.cacheDirectories]
-cargo = ["/usr/local/cargo/registry"]
-target = ["./target"]
