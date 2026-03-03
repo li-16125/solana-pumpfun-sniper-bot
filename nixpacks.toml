@@ -1,8 +1,15 @@
+# nixpacks.toml
 [phases.setup]
-nixPkgs = ["cargo", "rustc", "gcc", "openssl", "pkg-config"]
+nixPkgs = ["cargo", "rustc", "gcc", "openssl", "pkg-config", "make", "cmake"]
 
 [phases.build]
-cmds = ["cargo build --release --verbose"]
+cmds = [
+  "cargo build --release --verbose"
+]
 
 [start]
 cmd = "./target/release/solana-pumpfun-sniper-bot"
+
+[phases.setup.cacheDirectories]
+cargo = "/usr/local/cargo/registry"
+target = "./target"
